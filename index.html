@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definições básicas de idioma, codificação e responsividade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Caroline Grau</title>
+    <!-- Importando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <!-- Cabeçalho com nome e RU -->
+        <h1> Caroline da Silva Grau - RU 5282467</h1>
+        <br>
+        <nav>
+            <!-- Menu de navegação com âncoras para cada seção -->
+            <ul>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <!-- Seção de apresentação pessoal -->
+    <section id="sobre">
+        <h2>Sobre mim</h2>
+        <p> Tenho 30 anos e sou mãe de três meninos, o que me inspira diariamente a buscar evolução e novos caminhos. 
+            Atuei por 9 anos como empreendedora na área da beleza, especializada em sobrancelhas e micropigmentação, 
+            onde desenvolvi habilidades de precisão, estética e relacionamento com clientes. 
+        </p>
+        <p>
+            Decidi migrar de carreira motivada pelo sonho de conquistar maior liberdade financeira, geográfica e de tempo. 
+            Encontrei na tecnologia uma oportunidade de transformar esse desejo em realidade e hoje sou estudante de 
+            Ciência de Dados pela Uninter, atualmente cursando o 2º período. 
+        </p>
+        <p>
+            Sou curiosa, determinada e ambiciosa, sempre em busca de novos aprendizados e desafios que me permitam 
+            crescer pessoal e profissionalmente. Meu objetivo é unir minha experiência empreendedora com o poder da 
+            tecnologia para construir soluções inovadoras e impactantes.
+        </p>
+        <p>
+            Acredito que cada passo da minha jornada é uma oportunidade de inspirar meus filhos e mostrar que é possível reinventar-se.
+        </p>
+    </section>
+    <hr>
+
+    <!-- Seção de formação acadêmica -->
+    <section id="formacao">
+        <h2>Formação</h2>
+        <p>
+            Minha trajetória acadêmica começou em 2013, quando concluí o ensino médio pela Escola Estadual João Jorge Marmorato, em São Carlos (SP). 
+            No ano seguinte, em 2014, ampliei meus conhecimentos ao concluir o curso técnico em Meio Ambiente pelo Senac São Carlos, 
+            experiência que me proporcionou uma visão ampla sobre sustentabilidade e responsabilidade socioambiental.
+        </p>
+        <p>
+            Entre 2015 e 2020, dediquei-me a diversos cursos livres na área da beleza, incluindo design de sobrancelhas, depilação e micropigmentação. 
+            Essas formações complementares foram fundamentais para minha trajetória empreendedora, permitindo que eu desenvolvesse técnicas especializadas 
+            e consolidasse minha atuação no setor.
+        </p>
+        <p>
+            Em 2021, retornei ao Senac São Carlos para concluir o curso técnico em Estética, 
+            consolidando minha carreira na área da beleza e fortalecendo meu trabalho como empreendedora. 
+            Essa formação me permitiu aprofundar conhecimentos práticos e ampliar minha visão sobre cuidados estéticos e bem-estar.
+        </p>
+        <p>
+            Em 2025, decidi migrar de área e iniciei minha graduação em Ciência de Dados pela Uninter, 
+            curso que estou atualmente cursando no 2º período e que tem previsão de término em 2027. 
+            Paralelamente, também em 2025, ingressei na comunidade <em>Serasa Transforme-se</em>, em parceria com o Senac, 
+            onde estou me especializando em Programação, com conclusão prevista para abril de 2026.
+        </p>
+        <p>
+            Cada etapa da minha formação reflete meu desejo constante de aprender e evoluir, 
+            unindo experiências diversas para construir uma carreira sólida e alinhada aos meus objetivos de liberdade e inovação.
+        </p>
+    </section>
+    <hr>
+
+    <!-- Seção de portfólio com links para projetos -->
+    <section id="portfolio">
+        <h2>Portfólio</h2>
+         <p>
+            Aqui estão alguns dos projetos que desenvolvi durante minha trajetória acadêmica e em bootcamps, 
+            além de iniciativas que refletem meu interesse em aplicar tecnologia de forma prática e transformadora.
+        </p>
+        <div class="grid">
+            <div class="card">
+                <h3>Projetos no GitHub</h3>
+                 <p>
+                     Repositório com exercícios e projetos desenvolvidos na faculdade e em bootcamps, 
+                     explorando conceitos de programação, ciência de dados e computação em nuvem.
+                </p>
+                <a href="https://github.com/carolinegrau?tab=repositories" target="_blank" class="btn">Ver no GitHub</a>
+
+            </div>
+            <div class="card">
+              <h3>Oficina de Letramento em Dados</h3>
+                <p>
+                    Projeto acadêmico voltado para crianças do ensino fundamental, 
+                    com o objetivo de introduzir conceitos básicos de dados e estimular o pensamento crítico 
+                    através de atividades lúdicas e educativas.
+                </p>   
+                <a href="https://github.com/carolinegrau/projeto-LetramentoEmDados-" class="btn">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Seção de contato com formulário validado em JS -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="formContato">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form> 
+        <p id="mensagem"></p>   
+    </section>
+    <!-- Rodapé com direitos autorais -->
+    <footer>
+        <p>&copy; 2025 Caroline Grau</p>
+    </footer>
+
+    <script>
+        // Seleciona o formulário e o elemento de mensagem
+        const form = document.getElementById('formContato');
+        const mensagem = document.getElementById('mensagem');
+
+        // Adiciona evento de envio ao formulário
+        form.addEventListener ('submit',function(event)
+            { 
+            event.preventDefault(); // Evita o envio real
+                // Simulação de envio (50% de chance de sucesso)
+                 const enviadoComSucesso = Math.random() > 0.5;
+
+                if (enviadoComSucesso) {
+                    // Mensagem de sucesso e limpeza dos campos
+                    mensagem.textContent = "Mensagem enviada com sucesso!";
+                    mensagem.className = "sucesso";
+                    form.reset();
+                } else {
+                    // Mensagem de erro
+                    mensagem.textContent = "Erro ao enviar. Tente novamente.";
+                    mensagem.className = "erro";
+                }
+            });
+    </script>
+    
+</body>
+</html>
